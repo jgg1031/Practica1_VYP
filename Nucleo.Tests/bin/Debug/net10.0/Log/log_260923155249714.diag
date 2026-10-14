@@ -1,0 +1,15 @@
+2026-09-23T15:52:49.7210854+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.0.2+88c9fc53a3b4f0fdf6b29a54e0e9f39dd44d9ede
+2026-09-23T15:52:49.7301602+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-09-23T15:52:49.7312653+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-09-23T15:52:49.7312698+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 15:52:49.686
+2026-09-23T15:52:49.7313326+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 13688
+2026-09-23T15:52:49.7315071+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 10.0.12
+2026-09-23T15:52:49.7315294+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.12\System.Private.CoreLib.dll
+2026-09-23T15:52:49.7315429+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-09-23T15:52:49.7316262+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Nucleo.Tests\bin\Debug\net10.0\Nucleo.Tests.dll
+2026-09-23T15:52:49.7317601+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Nucleo.Tests\bin\Debug\net10.0\Log --results-directory C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\TestResults --client-port 49805'
+2026-09-23T15:52:49.7327987+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-09-23T15:52:49.8369580+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-09-23T15:52:49.8924598+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-09-23T15:52:50.2068369+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTest.Sdk' Version: '4.0.2' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2026-09-23T15:52:50.3061506+00:00 mstest-trace INFORMATION MSTestDiscoverer: Found 1 tests from source C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Nucleo.Tests\bin\Debug\net10.0\Nucleo.Tests.dll

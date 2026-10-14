@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Nucleo.Tests/Nucleo.Tests.csproj" />
+  <Project Path="Projecto1/Nucleo.csproj" />
+  <Project Path="www/www.csproj" Id="cb7effc7-4a9f-443a-a675-3733361c333f" />
+</Solution>

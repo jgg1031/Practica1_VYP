@@ -1,0 +1,15 @@
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\bin\Debug\net10.0\Nucleo.exe
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\bin\Debug\net10.0\Nucleo.deps.json
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\bin\Debug\net10.0\Nucleo.runtimeconfig.json
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\bin\Debug\net10.0\Nucleo.dll
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\bin\Debug\net10.0\Nucleo.pdb
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.AssemblyInfoInputs.cache
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.AssemblyInfo.cs
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.csproj.CoreCompileInputs.cache
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.dll
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\refint\Nucleo.dll
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.pdb
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.genruntimeconfig.cache
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\ref\Nucleo.dll
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\Projecto1\obj\Debug\net10.0\Nucleo.csproj.Up2Date

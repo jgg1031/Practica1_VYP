@@ -1,0 +1,8 @@
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\www.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\www.AssemblyInfoInputs.cache
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\www.AssemblyInfo.cs
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\www.csproj.CoreCompileInputs.cache
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\www.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\www.RazorAssemblyInfo.cache
+C:\Users\34638\OneDrive\Escritorio\Uni\4º\VALIDYPRUB\PRACTICAS\PR1\Projecto1\www\obj\Debug\net10.0\www.RazorAssemblyInfo.cs
