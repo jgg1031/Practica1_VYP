@@ -1,2 +1,14 @@
-﻿[Bb]in/
-[Oo]bj/
+# Carpetas de compilación de .NET
+bin/
+obj/
+
+# Carpetas ocultas y archivos de configuración local de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos temporales y cachés
+*.log
+*.cache

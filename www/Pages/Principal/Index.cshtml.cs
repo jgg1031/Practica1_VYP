@@ -1,4 +1,4 @@
-﻿using BackEnd;
+using BackEnd;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Nucleo.Modelos;
@@ -10,56 +10,39 @@ public class IndexModel : PageModel
 {
     private readonly IDatos _datos;
 
-    public Usuario? UsuarioActual { get; private set; }
-    public string NombreUsuario { get; set; } = "";
-
     public IndexModel(IDatos datos)
     {
         _datos = datos;
     }
 
+    public Usuario? UsuarioActual { get; set; }
+
     public IActionResult OnGet()
     {
-        int? idUsuario = HttpContext.Session.GetInt32(ClavesSesion.UsuarioId);
+        int? usuarioId = HttpContext.Session.GetInt32(ClavesSesion.UsuarioId);
 
-        if (idUsuario is null || idUsuario <= 0)
+        if (usuarioId is null)
         {
-            EliminarDatosSesion();
             return RedirectToPage("/Login/Index");
         }
 
-        UsuarioActual = _datos.LeerUsuario(idUsuario.Value);
+        UsuarioActual = _datos.LeerUsuario(usuarioId.Value);
 
         if (UsuarioActual is null)
         {
-            EliminarDatosSesion();
             return RedirectToPage("/Login/Index");
         }
 
-        NombreUsuario = UsuarioActual.EMail;
-        return Page();
-    }
-
-    public IActionResult OnPostCerrarSesion()
-    {
-        int? idUsuario = HttpContext.Session.GetInt32(ClavesSesion.UsuarioId);
-        if (idUsuario is not null)
+        // Especificar el espacio de nombres completo evita conflictos
+        Nucleo.Modelos.Log entrada = new Nucleo.Modelos.Log
         {
-            var usuario = _datos.LeerUsuario(idUsuario.Value);
-            if (usuario is not null)
-            {
-                _datos.AgregarLog(new EntradaLog(DateTime.Now, "Inicio de Sesión", $"Cierre de Sesión {usuario.EMail}", usuario.ToString()));
-            }
-        }
+            Id_Log = 1,
+            Fecha = DateTime.Now,
+            Mensaje = $"El usuario {UsuarioActual.Email} ha accedido a la pantalla principal."
+        };
 
-        EliminarDatosSesion();
-        return RedirectToPage("/Login/Index");
-    }
+        _datos.AgregarLog(entrada);
 
-    private void EliminarDatosSesion()
-    {
-        HttpContext.Session.Remove(ClavesSesion.EmailPendiente);
-        HttpContext.Session.Remove(ClavesSesion.UsuarioId);
-        HttpContext.Session.Remove(ClavesSesion.ProyectoActualId);
+        return Page();
     }
 }

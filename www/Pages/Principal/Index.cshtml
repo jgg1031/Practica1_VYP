@@ -1,11 +1,13 @@
-﻿@page 
-@model www.Pages.Principal.IndexModel 
-@{ 
+﻿@page
+@model www.Pages.Principal.IndexModel
+
+@{
     ViewData["Title"] = "Principal";
     ViewData["NombreProyecto"] = "-";
     ViewData["TituloCabecera"] = "Página principal";
     ViewData["MostrarMenuUsuario"] = true;
-    ViewData["NombreUsuario"] = Model.NombreUsuario;
+    ViewData["NombreUsuario"] = Model.UsuarioActual?.Nombre ?? Model.UsuarioActual?.Email ?? "-";
 }
-<h1 class="h3">Zona de trabajo </h1>
-<p> Contenido de la página principal. </p>
+
+<h1 class="h3">Zona de trabajo</h1>
+<p>Contenido de la página principal.</p>

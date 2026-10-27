@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Elementos de la solución/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="BackEnd.Tests/BackEnd.Tests.csproj" Id="d11493ae-57e3-4156-9156-66696d333fdb" />
+  <Project Path="BackEnd/BackEnd.csproj" Id="fcce70d6-e34b-4854-91f6-dab15e279688" />
+  <Project Path="Nucleo.Tests/Nucleo.Tests.csproj" />
+  <Project Path="PR01/Nucleo.csproj" />
+  <Project Path="www.Tests/www.Tests.csproj" Id="e56d79fd-f8ef-4fc7-9781-dbdf593c5386" />
+  <Project Path="www/www.csproj" Id="06e36768-17a1-4f8a-acb3-5660beadf766" />
+</Solution>

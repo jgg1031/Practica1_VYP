@@ -1,32 +1,21 @@
-﻿using BackEnd;
+using BackEnd;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
 
-builder.Services.AddSingleton<IDatos, DatosMemoria>();
+builder.Services.AddSingleton<IDatos, Datos>();
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    app.UseHsts();
-}
+app.UseStaticFiles();
 
-app.UseHttpsRedirection();
-app.UseRouting();
 app.UseSession();
-app.UseAuthorization();
 
-app.MapStaticAssets();
-app.MapRazorPages().WithStaticAssets();
+app.MapRazorPages();
 
 app.Run();

@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TestProjectManagementPlatform.Nucleo.Seguridad;
+using Nucleo.Seguridad;
 
 namespace Nucleo.Tests.Seguridad;
 
@@ -7,15 +7,30 @@ namespace Nucleo.Tests.Seguridad;
 public class ServicioContrasenasTests
 {
     [TestMethod]
-    public void EsValida_DeberiaRetornarResultadoEsperado()
+    public void ValidarPassword_OchoCasosDePrueba_DevuelveResultadoEsperado()
     {
-        Assert.IsFalse(ServicioContrasenas.EsValida(""));
+        // ID 1: Valor Nulo -> F (false)
+        Assert.IsFalse(ServicioContrasenas.EsValida(null!));
+
+        // ID 2: Todo Mayusculas -> F (false)
+        Assert.IsFalse(ServicioContrasenas.EsValida("P@SSW0RD"));
+
+        // ID 3: Todo Numeros -> F (false)
         Assert.IsFalse(ServicioContrasenas.EsValida("12345678"));
-        Assert.IsFalse(ServicioContrasenas.EsValida("Contr4"));
-        Assert.IsFalse(ServicioContrasenas.EsValida("contr4seña"));
-        Assert.IsFalse(ServicioContrasenas.EsValida("CONTRASEÑ@"));
-        Assert.IsFalse(ServicioContrasenas.EsValida("contraseñ@"));
-        Assert.IsFalse(ServicioContrasenas.EsValida("Contraseñ@"));
-        Assert.IsTrue(ServicioContrasenas.EsValida("Contr4señ@"));
+
+        // ID 4: Menos de 8 caracteres -> F (false)
+        Assert.IsFalse(ServicioContrasenas.EsValida("pasword"));
+
+        // ID 5: Todo Minusculas -> F (false)
+        Assert.IsFalse(ServicioContrasenas.EsValida("password"));
+
+        // ID 6: No caracteres especiales -> F (false)
+        Assert.IsFalse(ServicioContrasenas.EsValida("Password"));
+
+        // ID 7: No hay numeros -> F (false)
+        Assert.IsFalse(ServicioContrasenas.EsValida("P@ssword"));
+
+        // ID 8: Contraseña correcta -> T (true)
+        Assert.IsTrue(ServicioContrasenas.EsValida("P@ssw0rd"));
     }
 }

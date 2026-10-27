@@ -1,4 +1,4 @@
-﻿using BackEnd;
+using BackEnd;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Nucleo.Modelos;
@@ -20,9 +20,7 @@ public class Index2Model : PageModel
     [Required(ErrorMessage = "Debe indicar una contraseña.")]
     [DataType(DataType.Password)]
     public string Contraseña { get; set; } = "";
-
     public string EMail { get; set; } = "";
-
     public IActionResult OnGet()
     {
         EMail = ObtenerEmailPendiente();
@@ -38,6 +36,7 @@ public class Index2Model : PageModel
     public IActionResult OnPostAtras()
     {
         HttpContext.Session.Remove(ClavesSesion.EmailPendiente);
+
         return RedirectToPage("/Login/Index");
     }
 
@@ -57,20 +56,40 @@ public class Index2Model : PageModel
 
         Usuario? usuario = _datos.LeerUsuario(EMail);
 
-        if (usuario is null || !usuario.CompruebaPassword(Contraseña))
+        if (usuario is null)
         {
-            ModelState.AddModelError(nameof(Contraseña), "Usuario o contraseña incorrectos.");
+            ModelState.AddModelError(
+                "Contraseña",
+                "Usuario o contraseña incorrectos.");
+
             return Page();
         }
 
-        HttpContext.Session.Remove(ClavesSesion.EmailPendiente);
-        HttpContext.Session.SetInt32(ClavesSesion.UsuarioId, usuario.IdUsuario);
+        bool contraseñaCorrecta = usuario.CompruebaPassword(Contraseña);
+
+        if (!contraseñaCorrecta)
+        {
+            ModelState.AddModelError(
+                "Contraseña",
+                "Usuario o contraseña incorrectos.");
+
+            return Page();
+        }
+
+        // Usuario correctamente autenticado.
+        HttpContext.Session.Remove(
+            ClavesSesion.EmailPendiente);
+
+        HttpContext.Session.SetInt32(
+            ClavesSesion.UsuarioId,
+            usuario.IdUsuario);
 
         return RedirectToPage("/Principal/Index");
     }
-
     private string ObtenerEmailPendiente()
     {
-        return HttpContext.Session.GetString(ClavesSesion.EmailPendiente) ?? "";
+        return HttpContext.Session.GetString(
+            ClavesSesion.EmailPendiente) ?? "";
     }
+
 }
